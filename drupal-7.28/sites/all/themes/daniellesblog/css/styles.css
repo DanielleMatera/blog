@@ -1,0 +1,105 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+
+
+a:link,a:active, a:visited{
+	color: #f6a7bf;
+	text-decoration: none;
+	font-family: 'helvetica', sans-serif;
+
+}
+
+a:hover{
+	color: #fa5688;
+	}
+
+body {
+	background-image: url(bg.jpg);
+	background-repeat: repeat;
+	color: #a5a4a4;
+	font-family: 'helvetica', sans-serif;
+}
+
+header{
+	background-color: white;
+}
+
+#content{
+	background-color: white;
+}
+
+.block {
+	background-color: white;
+	padding: 10px;
+}
+
+.block h2{
+	color: #acffbe;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.node{
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.node-title a{
+	font-size: 40px;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.node-readmore{
+	float: right;
+}
+
+.comment-add{
+	float: right;
+}
+
+#main-menu{
+	background-color: #fbffac;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin-right: -10px;
+	margin-left: -10px;
+	text-align: center;
+}
+
+.views-field-title{
+	position: absolute;
+	bottom: 35px;
+	left: 0px;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	opacity: 0.75;
+	width: 235px;
+	padding: 5px;
+}
+
+.views-slideshow-controls-bottom{
+	display: none;
+}
